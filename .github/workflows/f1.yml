@@ -11,10 +11,10 @@ jobs:
         with:
           java-version: 21
       - name: Cache Maven packages
-        uses: actions/cache@v3  # 更新版本
+        uses: actions/cache@v2
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-m2-${{(hashFiles('**/pom.xml') )}
           restore-keys: ${{ runner.os }}-m2
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
