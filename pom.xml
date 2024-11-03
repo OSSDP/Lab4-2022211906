@@ -8,12 +8,20 @@
   <name>Archetype - Lab4</name>
   <url>https://maven.apache.org</url>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version> <!-- 或使用最新的稳定版本 -->
+      </plugin>
+    </plugins>
+  </build>
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,3 +31,4 @@
     </dependency>
   </dependencies>
 </project>
+
