@@ -7,10 +7,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - Lab4</name>
   <url>https://maven.apache.org</url>
+
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
